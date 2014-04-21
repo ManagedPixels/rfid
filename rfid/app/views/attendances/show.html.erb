@@ -1,0 +1,28 @@
+<div><label>attendance</label>
+<%= link_to 'Edit', edit_attendance_path(@attendance) %> |
+<%= link_to 'List', attendances_path %>
+</div>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Attendee:</strong>
+  <%= @attendance.attendee %>
+</p>
+
+<p>
+  <strong>Workshop:</strong>
+  <%= @attendance.workshop %>
+</p>
+
+<p>
+  <strong>Swipe time:</strong>
+  <%= @attendance.swipe_time %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @attendance.status %>
+</p>
+
+

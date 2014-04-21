@@ -1,0 +1,47 @@
+
+<div>
+<label>workshop</label>
+
+Find: <input>
+
+<%= link_to 'New Workshop', new_workshop_path %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Attendee</th>
+      <th>Starts at</th>
+      <th>Ends at</th>
+      <th>Rescheduled</th>
+      <th>Room name</th>
+      <th>Building name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @workshops.each do |workshop| %>
+      <tr>
+        <td><%= link_to 'Show', workshop %></td>
+        <td><%= link_to 'Edit', edit_workshop_path(workshop) %></td>
+             
+        <td><%= workshop.name %></td>
+        <td><%= workshop.attendee %></td>
+        <td><%= workshop.starts_at %></td>
+        <td><%= workshop.ends_at %></td>
+        <td><%= workshop.rescheduled %></td>
+        <td><%= workshop.room_name %></td>
+        <td><%= workshop.building_name %></td>
+<td><%= link_to 'Destroy', workshop, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

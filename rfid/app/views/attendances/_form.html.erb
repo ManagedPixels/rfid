@@ -1,0 +1,35 @@
+<div><label>attendance</label>
+</div>    
+<%= form_for(@attendance) do |f| %>
+  <% if @attendance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@attendance.errors.count, "error") %> prohibited this attendance from being saved:</h2>
+
+      <ul>
+      <% @attendance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :attendee_id %><br>
+    <%= f.collection_select :attendee_id, Attendee.all, :id, :name, prompt: true %>
+  </div>
+  <div class="field">
+    <%= f.label :workshop_id %><br>
+    <%= f.collection_select :workshop_id, Workshop.all, :id, :name, prompt: true %>
+  </div>
+  <div class="field">
+    <%= f.label :swipe_time %><br>
+    <%= f.datetime_select :swipe_time %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

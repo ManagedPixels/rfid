@@ -1,3 +1,8 @@
+<div><label><%= singular_table_name %></label>
+<%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) %> |
+<%%= link_to 'List', <%= index_helper %>_path %>
+</div>
+
 <p id="notice"><%%= notice %></p>
 
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
@@ -7,5 +12,4 @@
 </p>
 
 <% end -%>
-<%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) %> |
-<%%= link_to 'Back', <%= index_helper %>_path %>
+

@@ -1,0 +1,47 @@
+<div><label>workshop</label>
+</div>    
+<%= form_for(@workshop) do |f| %>
+  <% if @workshop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@workshop.errors.count, "error") %> prohibited this workshop from being saved:</h2>
+
+      <ul>
+      <% @workshop.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :attendee_id %><br>
+    <%= f.collection_select :attendee_id, Attendee.all, :id, :name, prompt: true %>
+  </div>
+  <div class="field">
+    <%= f.label :starts_at %><br>
+    <%= f.datetime_select :starts_at %>
+  </div>
+  <div class="field">
+    <%= f.label :ends_at %><br>
+    <%= f.datetime_select :ends_at %>
+  </div>
+  <div class="field">
+    <%= f.label :rescheduled %><br>
+    <%= f.check_box :rescheduled %>
+  </div>
+  <div class="field">
+    <%= f.label :room_name %><br>
+    <%= f.text_field :room_name %>
+  </div>
+  <div class="field">
+    <%= f.label :building_name %><br>
+    <%= f.text_field :building_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

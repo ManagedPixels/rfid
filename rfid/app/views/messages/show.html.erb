@@ -1,0 +1,18 @@
+<div><label>message</label>
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'List', messages_path %>
+</div>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Attendee:</strong>
+  <%= @message.attendee %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @message.message %>
+</p>
+
+

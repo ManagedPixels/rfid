@@ -1,5 +1,8 @@
-<h1>New <%= singular_table_name %></h1>
+<div>
+<label><%= singular_table_name %></label>
+<%%= link_to 'List', <%= index_helper %>_path %>
+</div>
 
 <%%= render 'form' %>
 
-<%%= link_to 'Back', <%= index_helper %>_path %>
+
