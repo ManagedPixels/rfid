@@ -50,9 +50,13 @@ footer{
 	}
 #myCarousel{
 	height: 100px;
+
 	}
 .carousel-inner > .item > img, 
 .carousel-inner > .item > a > img{
  /* use this, or not */
 margin: auto;
 }
+#eldata{
+	min-height: 300px;
+	}
