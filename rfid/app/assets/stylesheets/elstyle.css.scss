@@ -1,5 +1,37 @@
+/*
+til find stylesheet
+#F1F8FB
+#1875BB blue
+*/
 body{
-	background-color: blue !important;
+	background-color: #1875BB !important;
+	}
+.jumbotron{
+	/* background-color: orange !important; */
+	}
+.jumbotron .container{
+	background-color: orange !important;	
+	width: 100% !important;
+	
+background: orange; /* Old browsers */
+background: -moz-linear-gradient(top, orange 0%, red  100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,orange), color-stop(100%,white)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, orange 0%,white 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, orange 0%, white 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, orange 0%,white 100%); /* IE10+ */
+background: linear-gradient(to bottom, orange 0%,white 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=orange, endColorstr=white,GradientType=0 ); /* IE6-9 */	
+	
+	}
+h1{
+	font-size: 2em !important;
+	background-color: transparent !important;
+	color: white !important;
+	text-shadow: 1px 1px black;
+	}
+h2{
+	color: orange !important;
+	text-shadow: 1px 1px #222222, 2px 2px 6px gray;;
 	}
 .container{
 	background-color: white;
@@ -50,7 +82,7 @@ footer{
 	}
 #myCarousel{
 	height: 100px;
-
+	background-color: white;
 	}
 .carousel-inner > .item > img, 
 .carousel-inner > .item > a > img{
@@ -59,4 +91,23 @@ margin: auto;
 }
 #eldata{
 	min-height: 300px;
+	}
+.masthead a{
+	background-color: orange !important;
+	opacity: .8;
+	padding: 4px !important;
+	margin: 2px !important;
+	border-radius: 2px;
+	box-shadow: 2px 2px 5px black;
+	text-decoration: none;
+	min-height: 50px !important;
+	-webkit-text-stroke-width: .5px;
+	letter-spacing: .1em;
+	-webkit-text-stroke-color: black;
+	}
+a:hover{
+	opacity: 1;
+	text-shadow: -2px -2px 9px yellow, 2px 2px 9px yellow;;
+	-webkit-text-stroke-width: 1px;
+	color: black;
 	}
