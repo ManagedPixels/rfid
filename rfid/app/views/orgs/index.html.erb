@@ -1,5 +1,5 @@
 
-<div>
+<div class="elgradient">
 <label>org</label>
 
 Find: <input>
@@ -7,7 +7,8 @@ Find: <input>
 <%= link_to 'New Org', new_org_path %>
 </div>
 
-<table>
+
+<table class="table table-striped table-bordered table-condensed">
   <thead>
     <tr>
       <th>Org name</th>
@@ -21,7 +22,7 @@ Find: <input>
     <% @orgs.each do |org| %>
       <tr>
         <td><%= link_to 'Show', org %></td>
-        <td><%= link_to 'Edit', edit_org_path(org) %></td>
+        <td><%= link_to 'Test Edit', edit_org_path(org), { class: 'glyphicon-pencil' } %></td>
              
         <td><%= org.org_name %></td>
 <td><%= link_to 'Destroy', org, method: :delete, data: { confirm: 'Are you sure?' } %></td> 
@@ -29,6 +30,7 @@ Find: <input>
     <% end %>
   </tbody>
 </table>
+
 
 <br>
 
