@@ -3,6 +3,13 @@ til find stylesheet
 #F1F8FB
 #1875BB blue
 */
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
 body{
 	background-color: #1875BB !important;
 	}
@@ -38,7 +45,13 @@ h1{
 	}
 h2{
 	color: orange !important;
-	text-shadow: 1px 1px #222222, 2px 2px 6px gray;
+	/* text-shadow: 1px 1px #222222, 2px 2px 6px gray; */
+	  background: -webkit-linear-gradient(orange, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  	-webkit-text-stroke-color: red;
+	-webkit-text-stroke-width: .3px;
+	
 	}
 .container{
 	background-color: white;
@@ -74,6 +87,19 @@ h2{
 .navbar-collapse{
 	background-color: black !important;
 	}
+.navbar-brand{
+	height: 1em;
+	}	
+.nav li{
+	vertical-align: top;
+	display: inline-block !important;
+	min-width: 90px;
+	}
+.nav-justified > li{
+	min-width: auto  !important;
+	font-size: .8em;
+	display: inline-block !important;
+	}	
 #sidebar{
 	z-index: 1;
 	}
@@ -178,4 +204,9 @@ a:hover{
 .elicon *:hover{ 
 	color: hsla( 40, 100%, 30%, 1 ) !important; 
 	background-color: yellow;
+}
+@media only screen and (max-width: 450px) {
+
+   body { font-size: .5em !important; }
+
 }
