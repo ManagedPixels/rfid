@@ -164,8 +164,19 @@ margin: auto;
  .elicon{
  	width: 1em;
  	}
-
- 
+.masthead_placeholder{
+	height: 2em;
+	}
+.masthead{
+	position: absolute;
+	}
+.masthead:hover{
+	height: auto;
+	z-index: 2;
+	border-radius: 1%;
+	border: 1px solid blue;
+	box-shadow: 3px 3px 5px black;
+	}
 .masthead a{
 	background-color: orange !important;
 	opacity: .8;
