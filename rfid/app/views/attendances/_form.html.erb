@@ -17,9 +17,9 @@
     <%= f.label :attendee_id %><br>
     <%= f.collection_select :attendee_id, Attendee.all, :id, :name, prompt: true %>
   </div>
-  <div class="field">
+  <div class="field" id="workshops">
     <%= f.label :workshop_id %><br>
-    <%= f.collection_select :workshop_id, Workshop.all, :id, :name, prompt: true %>
+    <%= f.collection_select :workshop_id,  Workshop.all, :id, :name, { prompt: false } , { size: '4' } %>
   </div>
   <div class="field">
     <%= f.label :swipe_time %><br>
@@ -33,3 +33,11 @@
     <%= f.submit %>
   </div>
 <% end %>
+
+<style>
+#workshops{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	}
+</style>

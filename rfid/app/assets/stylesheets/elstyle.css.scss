@@ -91,15 +91,29 @@ h2{
 	height: 1em;
 	font-size: .8em;
 	}	
+.nav{
+	overflow-y: scroll;
+	max-height: 55px;
+	}
+.nav:hover{  
+	/* position: absolute; */
+	max-height: 100%;
+	background-color: white;
+	z-index: 2;
+	/* border: 1px solid black; */
+	border-radius: 10px;
+	}
 .nav li{
 	vertical-align: top;
 	display: inline-block !important;
 	min-width: 90px;
+
 	}
 .nav-justified > li{
 	min-width: auto  !important;
 	font-size: .8em;
 	display: inline-block !important;
+
 	}	
 #sidebar{
 	z-index: 1;
@@ -180,8 +194,9 @@ a:hover{
 				background: -webkit-radial-gradient(center, ellipse cover,  orange 0%, orange 70%, hsla(30,100%,50%,1) 100%); /* Chrome10+,Safari5.1+ */
 }
 .elgradient{
-	color: orange;
-	text-shadow: 1px 1px 5px black;
+	padding: 1%;
+	color: black;
+/*	text-shadow: 1px 1px 5px black; */
 	font-size: 1.5em;
 	position: relative;
 	background-color: green; 
@@ -192,8 +207,13 @@ a:hover{
 .elgradient *{
 	color: orange !important;
 }
-
-
+#elbar{
+	margin: 0px;
+	margin-top: 20px;
+	}
+#eldata{
+	position: relative;
+	}
 
 #eldata .table tbody tr:hover td, .table tbody tr:hover th {
     background-color: hsla(30,100%,90%,1);

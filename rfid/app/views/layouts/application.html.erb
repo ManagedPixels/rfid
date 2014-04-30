@@ -77,7 +77,8 @@
       </div>
     </div>
 
-       <div class="col-xs-6 col-sm-3 sidebar-offcanvas elright hidden-sm hidden-xs" id="sidebar" role="navigation">
+	<!-- hiding this till I know what it should do
+       <div class="col-xs-6 col-sm-3 sidebar-offcanvas elright visible-lg" id="sidebar" role="navigation">
           <div class="list-group">
             <a href="#" class="list-group-item">Link</a>
             <a href="https://www.regonline.com/builder/site/tab3.aspx?EventID=1263433" class="list-group-item active">Florida Workforce Development Association</a>
@@ -87,7 +88,7 @@
             <a href="#" class="list-group-item">Schedule of events</a>
 
           </div>
-        </div><!--/span-->	
+        </div><!--/span-->	-->
         
       <div class="container">
       
@@ -155,21 +156,25 @@
 
       <div class="masthead">
         <ul class="nav nav-justified">
-          <li class="active"><a href="/attendances/new">Home</a></li>
-          <li><a href="/workshops">Workshops</a></li>
-          <li><a href="/orgs">Organizations</a></li>
-          <li><a href="/attendees">Attendees</a></li>
-          <li><a href="/surveys/new">Surveys</a></li>
-          <li><a href="/messages/new">Messages</a></li>
-		<li><a href="/orgs">Exhibitors</a></li>
-		<li><a href="/orgs">Confirm registration</a></li>
-		<li><a href="/orgs">Update schedule</a></li>
-		<li><a href="/orgs">Maintenance request</a></li>
-		<li><a href="/orgs">Schedule a Demo</a></li>                    
+          <li class="active"><a href="/attendances/new" class=" glyphicon glyphicon-glass ">Home</a></li>
+          <li ><a href="/workshops" class=" glyphicon glyphicon-eye-open ">Workshops</a></li>
+          <li><a href="/orgs" class=" glyphicon glyphicon-glass ">Organizations</a></li>
+          <li><a href="/attendees" class=" glyphicon glyphicon-person ">Attendees</a></li>
+          <li><a href="/surveys/new" class=" glyphicon glyphicon-glass ">Surveys</a></li>
+          <li><a href="/messages/new" class=" glyphicon glyphicon-envelope ">Messages</a></li>
+		<li><a href="/orgs" class=" glyphicon glyphicon-glass ">Exhibitors</a></li>
+		<li><a href="/orgs" class=" glyphicon glyphicon-glass ">Confirm registration</a></li>
+		<li><a href="/orgs" class=" glyphicon glyphicon-glass ">Update schedule</a></li>
+		<li><a href="/orgs" class=" glyphicon glyphicon-glass ">Maintenance request</a></li>
+		<li><a href="/orgs" class=" glyphicon glyphicon-glass ">Schedule a Demo</a></li>                    
         </ul>
       </div>
       
+      <div id="elbar">
+      <%= render partial: 'elbar' %>      
+      </div>
 <div id="eldata" >
+      
 		<%= yield %>
 </div>		
 	

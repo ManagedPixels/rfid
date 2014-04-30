@@ -1,9 +1,12 @@
 class OrgsController < ApplicationController
   before_action :set_org, only: [:show, :edit, :update, :destroy]
 
+  	gnorf = "howdy"
+
   # GET /orgs
   # GET /orgs.json
   def index
+
     @orgs = Org.all
   end
 

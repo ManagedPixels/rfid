@@ -3,6 +3,23 @@
 <%= link_to 'List', attendances_path %>
 </div>
 
+
+
+Swipe: <input id="swipe_input" autofocus="autofocus" type="password" >
+
 <%= render 'form' %>
 
 
+<script>
+ document.getElementById("swipe_input").onkeydown = function(evt) {
+     evt = evt || window.event;
+     if (evt.keyCode == 13) {
+        // submit your form
+        s = document.getElementById("swipe_input").value
+        
+        sName = 'el'
+        
+        confirm("You are " + s);
+     }
+   }
+</script>
