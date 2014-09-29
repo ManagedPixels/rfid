@@ -35,7 +35,7 @@
   </div>
   <div class="field">
     <%= f.label :org_id %><br>
-    <%= f.collection_select :org_id, Org.all, :id, :name, prompt: true %>
+    <%= f.collection_select :org_id, Org.all, :id, :org_name, prompt: true %>
   </div>
   <div class="field">
     <%= f.label :email %><br>
