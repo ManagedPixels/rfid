@@ -1,4 +1,5 @@
 
+
 <?php
 #header("Location: 'http://localhost:4567/'")
 #header("Location: ?done=1");
@@ -24,9 +25,10 @@ $kiosk_id = "2";
 #echo "Post variables: ";
 #print_r($_POST); 
 
-$title = "Atlas Attendance Tracker by CTS";
-echo "<title>" . $title . "</title>";
-echo "<h1>" . $title . "</h1>";
+$title = "Atlas Attendance Tracker by ";
+echo "<title>" . $title . "CTS</title>";
+echo '<img src="img/employ_florida_logo.jpg">';
+echo "<h1>" . $title . '<img class="name_logo" src="img/admin_header_logo.default.jpg "></h1>';
 
 if (isset($_POST['attendee_count'])) {
 	
@@ -34,11 +36,9 @@ if (isset($_POST['attendee_count'])) {
 	$s = $s . ",card_number:" . $_POST['card_number']; 
 	$s = $s . ",attendee_count:" .$_POST['attendee_count'];
 	fputs($STDOUT, $s . "\n");	
+		$attendee_count = $_POST['attendee_count'] + 1;
+
 	
-	echo "<br/><br/>Thank you!<br/>";
-	$attendee_count = $_POST['attendee_count'] + 1;
-	echo "<br/>Attendee count: ";
-	echo $attendee_count;		
 }else{
 	$attendee_count = 0;	
 }
@@ -48,8 +48,7 @@ if($_GET){
 }
 if($_POST){
 	#fputs($STDOUT, "writing to stdout directly\n");
-	echo "<br/>Last swipe at time: ";
-	echo $nTime;
+
 #	echo "<br/>Card number: ";
 #	echo $_POST['card_number'];
 	#header("Location: " . $_SERVER['REQUEST_URI']);
@@ -62,10 +61,7 @@ if($_POST){
 ?>
 
 
-<img src="img/admin_header_logo.default.jpg ">
 
-
-<img src="img/employ_florida_logo.jpg">
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"  >
 Swipe card
 <input type="hidden" name="kiosk_id" value="<?php echo $kiosk_id ?>">
@@ -73,13 +69,21 @@ Swipe card
 <input name="card_number" autofocus type="password">
 </form>
 
-
-
-
-
 <?php
-print "(Kiosk " . $kiosk_id . ")<br/>";
+if (isset($_POST['attendee_count'])) {
+		echo "<br/><br/>Thank you!<br/><br/>";
+
+	echo $attendee_count;	
+	echo " attendees ";
+	
+	print " at kiosk location " . $kiosk_id . "<br/>";	
+			
+	echo "<br/>Last swipe at time: ";
+	echo $nTime;				
+}
 ?>
+
+<br/>
 
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=rfid_development', 'root', '');
@@ -90,11 +94,18 @@ echo htmlentities($row['first_name']);
 <span class="footer">
 <img  src="img/atlas_logo_100.jpg">
 &copy; Computer Technology Services
+
 </span>
 
 <style>
+img{
+	vertical-align: top;
+	}
 .footer{
 	position: absolute;
 	bottom: 0px;
+	}
+.name_logo{
+	height: 1.6em;
 	}
 </style>
