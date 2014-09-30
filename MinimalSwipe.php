@@ -17,10 +17,10 @@ $STDOUT = fopen('./log.txt', 'a');
 
 
 
-$nTime = date('Y-m-d H:i:s');
+$swipe_time = date('Y-m-d H:i:s');
 #echo "Time: " . $nTime;
 
-$kiosk_id = "2";
+$kiosk_number = "2";
 
 #echo "Post variables: ";
 #print_r($_POST); 
@@ -32,11 +32,14 @@ echo "<h1>" . $title . '<img class="name_logo" src="img/admin_header_logo.defaul
 
 if (isset($_POST['attendee_count'])) {
 	
-	$s = "kiosk_id:" . $_POST['kiosk_id'];
-	$s = $s . ",card_number:" . $_POST['card_number']; 
+	$card_number = $_POST['card_number'];
+	$kiosk_number = $_POST['kiosk_number'];
+	
+	$s = "kiosk_number:" . $kiosk_number;
+	$s = $s . ",card_number:" . $card_number; 
 	$s = $s . ",attendee_count:" .$_POST['attendee_count'];
 	fputs($STDOUT, $s . "\n");	
-		$attendee_count = $_POST['attendee_count'] + 1;
+	$attendee_count = $_POST['attendee_count'] + 1;
 
 	
 }else{
@@ -64,7 +67,7 @@ if($_POST){
 
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"  >
 Swipe card
-<input type="hidden" name="kiosk_id" value="<?php echo $kiosk_id ?>">
+<input type="hidden" name="kiosk_number" value="<?php echo $kiosk_number ?>">
 <input type="hidden" name="attendee_count" value="<?php echo $attendee_count ?>"/>
 <input name="card_number" autofocus type="password">
 </form>
@@ -76,21 +79,40 @@ if (isset($_POST['attendee_count'])) {
 	echo $attendee_count;	
 	echo " attendees ";
 	
-	print " at kiosk location " . $kiosk_id . "<br/>";	
+	print " at kiosk location " . $kiosk_number . "<br/>";	
 			
 	echo "<br/>Last swipe at time: ";
-	echo $nTime;				
+	echo $swipe_time;				
+
+try{
+	$pdo = new PDO('mysql:host=localhost;dbname=rfid_development', 'root', '');
+	fputs($STDOUT, "$swipe_time -- Connected to db\n");	
+}
+catch(Exception $e){
+	fputs($STDOUT, "Error connecting to db\n");	
+	die("Unable to connect to db: " . $e->getMessage());
+	}
+
+fputs($STDOUT, "About to save record\n");	
+
+try{
+	$pdo->exec("insert into attendances (card_number, swipe_time, kiosk_number) values ( $card_number,  $swipe_time, $kiosk_number )");
+	#$pdo->commit();
+	fputs($STDOUT, "Saved record\n");	
+}catch(Exception $e){
+	#$pdo->rollBack();
+	fputs($STDOUT, "Some error trying to save this record into db\n");	
+	die("Unable to save record");	
+}
+
+$statement = $pdo->query("SELECT count(*) FROM attendances");
+$row = $statement->fetch(PDO::FETCH_ASSOC);
+$count = print_r($row, true);
+fputs($STDOUT, "Count is now: $count\n");	
+#echo htmlentities($row['first_name']);
 }
 ?>
 
-<br/>
-
-<?php
-$pdo = new PDO('mysql:host=localhost;dbname=rfid_development', 'root', '');
-$statement = $pdo->query("SELECT first_name FROM attendees");
-$row = $statement->fetch(PDO::FETCH_ASSOC);
-echo htmlentities($row['first_name']);
-?>
 <span class="footer">
 <img  src="img/atlas_logo_100.jpg">
 &copy; Computer Technology Services
