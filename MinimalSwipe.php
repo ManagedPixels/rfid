@@ -96,9 +96,11 @@ catch(Exception $e){
 fputs($STDOUT, "About to save record\n");	
 
 try{
-	$pdo->exec("insert into attendances (card_number, swipe_time, kiosk_number) values ( $card_number,  $swipe_time, $kiosk_number )");
+	$qry = "insert into attendances (card_number, swipe_time, kiosk_number) values ( '$card_number',  '$swipe_time', '$kiosk_number' )";
+	$pdo->exec($qry);
 	#$pdo->commit();
-	fputs($STDOUT, "Saved record\n");	
+	print "$qry\n";
+	fputs($STDOUT, "Saved record $qry\n");	
 }catch(Exception $e){
 	#$pdo->rollBack();
 	fputs($STDOUT, "Some error trying to save this record into db\n");	
