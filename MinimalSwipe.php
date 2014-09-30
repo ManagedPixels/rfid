@@ -8,6 +8,10 @@
 #    echo "<div>We have received your email, our agent will contact you shortly</div>";
 #}
 
+if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER["REQUEST_URI"])) {
+    return false;    // serve the requested resource as-is.
+}
+
 $STDOUT = fopen('./log.txt', 'a');
 
 $pdo = new PDO('mysql:host=localhost;dbname=rfid_development', 'root', '');
@@ -60,7 +64,7 @@ if($_POST){
 #echo date('Y-m-d')
 ?>
 
-
+<img src="img/employ_florida_logo.jpg">
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"  >
 Swipe card
 <input type="hidden" name="kiosk_id" value="<?php echo $kiosk_id ?>">
