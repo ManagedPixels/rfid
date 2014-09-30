@@ -27,8 +27,8 @@ $kiosk_number = "2";
 
 $title = "Atlas Attendance Tracker by ";
 echo "<title>" . $title . "CTS</title>";
-echo '<img src="img/employ_florida_logo.jpg">';
-echo "<h1>" . $title . '<img class="name_logo" src="img/admin_header_logo.default.jpg "></h1>';
+
+#echo "<h1>" . $title . '<img class="name_logo" src="img/admin_header_logo.default.jpg "></h1>';
 
 if (isset($_POST['attendee_count'])) {
 	
@@ -63,9 +63,9 @@ if($_POST){
 #echo date('Y-m-d')
 ?>
 
+<img id="kiosk_header" src="img/kiosk_header.jpg">
 
-
-<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"  >
+<form id="swipe_area" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"  >
 Swipe card
 <input type="hidden" name="kiosk_number" value="<?php echo $kiosk_number ?>">
 <input type="hidden" name="attendee_count" value="<?php echo $attendee_count ?>"/>
@@ -99,7 +99,7 @@ try{
 	$qry = "insert into attendances (card_number, swipe_time, kiosk_number) values ( '$card_number',  '$swipe_time', '$kiosk_number' )";
 	$pdo->exec($qry);
 	#$pdo->commit();
-	print "$qry\n";
+	#print "$qry\n";
 	fputs($STDOUT, "Saved record $qry\n");	
 }catch(Exception $e){
 	#$pdo->rollBack();
@@ -115,20 +115,28 @@ fputs($STDOUT, "Count is now: $count\n");
 }
 ?>
 
+<img id="employ_florida" src="img/employ_florida_logo.jpg">
+<img id="kiosk_header" src="img/kiosk_header.jpg">
+<!--
+<img id="atlas_logo" src="img/atlas_logo_100.jpg">
+-->
 <span class="footer">
-<img  src="img/atlas_logo_100.jpg">
-&copy; Computer Technology Services
+
+CareerSource Tampa Bay is an equal opportunity employer/program. Auxiliary aids and services are available upon request to individuals with disabilities.	
+All voice telephone numbers listed on this website may be reached by persons using TTY/TDD equipment via the Florida Relay Service at 711.	
+ATLAS is a trademark of Complete Technology Solutions Copyright &copy; 2014 - Complete Technology Solutions. All Rights Reserved.
 
 </span>
 
 <style>
+#kiosk_header{ position: absolute; left: 85px; top: 25px; }
+#employ_florida{ position: absolute; left: 850px; top: 500px; }
+#atlas_logo{ position: absolute; left: 850px; top: 37px; }
+#swipe_area{ position: absolute; left: 45px ; top: 151; }
 img{
 	vertical-align: top;
 	}
-.footer{
-	position: absolute;
-	bottom: 0px;
-	}
+.footer{ position: absolute; left: 56px; top: 500px; width: 700px; font-size: 11px; }
 .name_logo{
 	height: 1.6em;
 	}
