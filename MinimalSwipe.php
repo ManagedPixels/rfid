@@ -8,25 +8,41 @@
 #    echo "<div>We have received your email, our agent will contact you shortly</div>";
 #}
 
+$STDOUT = fopen('/dev/null', 'r');
+
 $nTime = date('Y-m-d H:i:s');
 #echo "Time: " . $nTime;
+
+$kiosk_id = "2";
+
+echo "Post variables: ";
+print_r($_POST); 
+
+if (isset($_POST['attendee_count'])) {
+	echo "<br/><br/>Thank you!<br/>";
+	$attendee_count = $_POST['attendee_count'] + 1;
+	echo "Attendee count now: ";
+	echo $attendee_count;		
+}else{
+	$attendee_count = 0;	
+}
 
 if($_GET){
 	echo "GET<br/>";
 }
 if($_POST){
+	fputs($STDOUT, "writing to stdout directly\n");
 	echo "Last values: Kiosk: ";
 	echo $_POST['kiosk_id'];
 	echo ", Sign in time: ";
 	echo $nTime;
 	echo ", Card number: ";
 	echo $_POST['card_number'];
+	#header("Location: " . $_SERVER['REQUEST_URI']);
 }
 
 echo "<br/>New values";
-$kiosk_id = "2";
 
-print ", Kiosk ID:" . $kiosk_id;
 
 #echo date('Y-m-d')
 ?>
@@ -35,6 +51,10 @@ print ", Kiosk ID:" . $kiosk_id;
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"  >
 Swipe card
 <input type="hidden" name="kiosk_id" value="<?php echo $kiosk_id ?>">
-
-<input name="card_number" autofocus >
+<input type="hidden" name="attendee_count" value="<?php echo $attendee_count ?>"/>
+<input name="card_number" autofocus type="password">
 </form>
+
+<?php
+print "(Kiosk " . $kiosk_id . ")";
+?>
