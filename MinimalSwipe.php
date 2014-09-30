@@ -70,7 +70,7 @@ Swipe card
 <input type="hidden" name="kiosk_number" value="<?php echo $kiosk_number ?>">
 <input type="hidden" name="attendee_count" value="<?php echo $attendee_count ?>"/>
 <input name="card_number" autofocus type="password">
-</form>
+
 
 <?php
 if (isset($_POST['attendee_count'])) {
@@ -92,7 +92,11 @@ catch(Exception $e){
 	fputs($STDOUT, "Error connecting to db\n");	
 	die("Unable to connect to db: " . $e->getMessage());
 	}
+?>
 
+</form>
+
+<?php
 fputs($STDOUT, "About to save record\n");	
 
 try{
@@ -116,8 +120,9 @@ fputs($STDOUT, "Count is now: $count\n");
 ?>
 
 <img id="employ_florida" src="img/employ_florida_logo.jpg">
-<img id="kiosk_header" src="img/kiosk_header.jpg">
+
 <!--
+<img id="kiosk_header" src="img/kiosk_header.jpg">
 <img id="atlas_logo" src="img/atlas_logo_100.jpg">
 -->
 <span class="footer">
@@ -139,5 +144,11 @@ img{
 .footer{ position: absolute; left: 56px; top: 500px; width: 700px; font-size: 11px; }
 .name_logo{
 	height: 1.6em;
+	}
+form{
+	border: 1px solid black;
+	height: 200px;
+	width: 700px;
+	padding: 40px;
 	}
 </style>
