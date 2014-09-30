@@ -14,10 +14,7 @@ if (preg_match('/\.(?:png|jpg|jpeg|gif)$/', $_SERVER["REQUEST_URI"])) {
 
 $STDOUT = fopen('./log.txt', 'a');
 
-$pdo = new PDO('mysql:host=localhost;dbname=rfid_development', 'root', '');
-$statement = $pdo->query("SELECT first_name FROM attendees");
-$row = $statement->fetch(PDO::FETCH_ASSOC);
-echo htmlentities($row['first_name']);
+
 
 $nTime = date('Y-m-d H:i:s');
 #echo "Time: " . $nTime;
@@ -64,6 +61,10 @@ if($_POST){
 #echo date('Y-m-d')
 ?>
 
+
+<img src="img/admin_header_logo.default.jpg ">
+
+
 <img src="img/employ_florida_logo.jpg">
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"  >
 Swipe card
@@ -72,6 +73,28 @@ Swipe card
 <input name="card_number" autofocus type="password">
 </form>
 
+
+
+
+
 <?php
-print "(Kiosk " . $kiosk_id . ")";
+print "(Kiosk " . $kiosk_id . ")<br/>";
 ?>
+
+<?php
+$pdo = new PDO('mysql:host=localhost;dbname=rfid_development', 'root', '');
+$statement = $pdo->query("SELECT first_name FROM attendees");
+$row = $statement->fetch(PDO::FETCH_ASSOC);
+echo htmlentities($row['first_name']);
+?>
+<span class="footer">
+<img  src="img/atlas_logo_100.jpg">
+&copy; Computer Technology Services
+</span>
+
+<style>
+.footer{
+	position: absolute;
+	bottom: 0px;
+	}
+</style>
