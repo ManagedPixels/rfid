@@ -8,20 +8,35 @@
 #    echo "<div>We have received your email, our agent will contact you shortly</div>";
 #}
 
-$STDOUT = fopen('/dev/null', 'r');
+$STDOUT = fopen('./log.txt', 'a');
+
+$pdo = new PDO('mysql:host=localhost;dbname=rfid_development', 'root', '');
+$statement = $pdo->query("SELECT first_name FROM attendees");
+$row = $statement->fetch(PDO::FETCH_ASSOC);
+echo htmlentities($row['first_name']);
 
 $nTime = date('Y-m-d H:i:s');
 #echo "Time: " . $nTime;
 
 $kiosk_id = "2";
 
-echo "Post variables: ";
-print_r($_POST); 
+#echo "Post variables: ";
+#print_r($_POST); 
+
+$title = "Atlas Attendance Tracker by CTS";
+echo "<title>" . $title . "</title>";
+echo "<h1>" . $title . "</h1>";
 
 if (isset($_POST['attendee_count'])) {
+	
+	$s = "kiosk_id:" . $_POST['kiosk_id'];
+	$s = $s . ",card_number:" . $_POST['card_number']; 
+	$s = $s . ",attendee_count:" .$_POST['attendee_count'];
+	fputs($STDOUT, $s . "\n");	
+	
 	echo "<br/><br/>Thank you!<br/>";
 	$attendee_count = $_POST['attendee_count'] + 1;
-	echo "Attendee count now: ";
+	echo "<br/>Attendee count: ";
 	echo $attendee_count;		
 }else{
 	$attendee_count = 0;	
@@ -31,17 +46,15 @@ if($_GET){
 	echo "GET<br/>";
 }
 if($_POST){
-	fputs($STDOUT, "writing to stdout directly\n");
-	echo "Last values: Kiosk: ";
-	echo $_POST['kiosk_id'];
-	echo ", Sign in time: ";
+	#fputs($STDOUT, "writing to stdout directly\n");
+	echo "<br/>Last swipe at time: ";
 	echo $nTime;
-	echo ", Card number: ";
-	echo $_POST['card_number'];
+#	echo "<br/>Card number: ";
+#	echo $_POST['card_number'];
 	#header("Location: " . $_SERVER['REQUEST_URI']);
 }
 
-echo "<br/>New values";
+#echo "<br/>New values";
 
 
 #echo date('Y-m-d')
