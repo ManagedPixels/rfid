@@ -35,7 +35,7 @@
 <?php 
 require_once './rfid.php';
   $id = new rfid(2);
-  echo $_POST['card_number'];
+  //echo $_POST['card_number'];
   if(isset($_POST['card_number'])):
       $id->add_count($_POST['card_number']);
   endif;
@@ -112,20 +112,20 @@ require_once './rfid.php';
                                                   
                                                 </div>
 
-                                                <div class="form-group col-sm-12"></div>
-                                            
+                                              
+<!--                                            
                                                 <p><button class="btn btn-success btn-lg" type="submit" role="button"><i class="fa fa-unlock-alt"></i> Login Here</button> <a
                                                         href="http://#" class="btn btn-info btn-lg">
                                                     <i class="fa fa-check-circle"></i>  I'd prefer to login with License or ID
                                                 </a>
-                                                </p>
+                                                </p>-->
 
                                             </form>
                                         </div>
                                     </div>
                                     <div class="powered-by">
-                                        <p><a href="#" class="btn btn-info"><i class="fa fa-flag"></i>  Español</a> </p>
-                                        <p class="text-center small">&copy; 2014 Powered by Atlas</p>
+                                        <p><a href="#" class="btn btn-info"><i class="fa fa-flag"></i>  &copy; 2014 Powered by Atlas</a> </p>
+                                       
                                     </div>
 
 

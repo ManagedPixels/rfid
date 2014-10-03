@@ -60,7 +60,7 @@ class rfid {
             try {
                 $qry = "INSERT INTO attendances(card_number, swipe_time, kiosk_number) VALUES( '$card_number',  '$swipe_time', '$kiosk_number' )";
                 if($p = $this->pdo->exec($qry)):
-                     print_r($this->pdo->errorInfo());
+                  //   print_r($this->pdo->errorInfo());
                 $this->log('data saved - '. $p .$this->swipe_time);
                 endif;
             } catch (Exception $exc) {

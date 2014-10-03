@@ -89,3 +89,5 @@ Count is now: Array
     [count(*)] => 3
 )
 
+Connection to the database - 2014-10-03 18:52:30
+Connection to the database - 2014-10-03 18:53:41
