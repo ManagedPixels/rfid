@@ -31,6 +31,16 @@
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
+<?php 
+require_once './rfid.php';
+  $id = new rfid(2);
+  echo $_POST['card_number'];
+  if(isset($_POST['card_number'])):
+      $id->add_count($_POST['card_number']);
+  endif;
+?>
+
 <body>
 <!--[if lt IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -88,12 +98,23 @@
                                     </div>
                                     <div class="well-off">
                                         <div class="">
-                                            <form action="">
+                                            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+                                     
                                                 <div class="form-group col-md-12">
                                                     <label for="">Please swipe you Identification card</label>
-                                                    <input type="text" class="form-control" id="" placeholder="Pelase swipe you ID card">
+                                                    <input type="password" class="form-control" name="card_number" placeholder="Pelase swipe you ID card">
                                                 </div>
-                                                <p><a class="btn btn-success btn-lg" role="button"><i class="fa fa-unlock-alt"></i> Login Here</a> <a
+                                                <div class="form-group col-sm-12">
+                                                    <input type="hidden" name="kiosk_number" value="<?php echo $id->kiosk_number ?>">
+                                                </div>
+                                                <div class="form-group col-sm-12">
+                                                    <input type="hidden" name="attendee_count" value="<?php echo $id->attendee_count ?>"/>
+                                                  
+                                                </div>
+
+                                                <div class="form-group col-sm-12"></div>
+                                            
+                                                <p><button class="btn btn-success btn-lg" type="submit" role="button"><i class="fa fa-unlock-alt"></i> Login Here</button> <a
                                                         href="http://#" class="btn btn-info btn-lg">
                                                     <i class="fa fa-check-circle"></i>  I'd prefer to login with License or ID
                                                 </a>

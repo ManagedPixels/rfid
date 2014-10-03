@@ -1,0 +1,91 @@
+
+2014-10-03 17:40:44
+2014-10-03 17:40:50
+Connection to the database
+Connection to the database
+Connection to the database - 2014-10-03 17:45:04
+Connection to the database - 2014-10-03 17:45:16
+data saver - 2014-10-03 17:45:16
+Connection to the database - 2014-10-03 17:48:17
+data saver - 2014-10-03 17:48:17
+Connection to the database - 2014-10-03 17:49:09
+Connection to the database - 2014-10-03 17:49:17
+data saved - 2014-10-03 17:49:17
+Connection to the database - 2014-10-03 17:51:40
+Connection to the database - 2014-10-03 17:55:58
+Connection to the database - 2014-10-03 17:56:44
+Connection to the database - 2014-10-03 17:58:07
+Connection to the database - 2014-10-03 18:02:04
+Connection to the database - 2014-10-03 18:02:07
+Connection to the database - 2014-10-03 18:06:08
+Connection to the database - 2014-10-03 18:06:21
+Connection to the database - 2014-10-03 18:08:18
+kiosk_number:2,card_number:11111111,attendee_count:
+2014-10-03 18:11:55 -- Connected to db
+About to save record
+Saved record insert into attendances (card_number, swipe_time, kiosk_number) values ( '11111111',  '2014-10-03 18:11:55', '2' )
+Count is now: Array
+(
+    [count(*)] => 1
+)
+
+kiosk_number:2,card_number:333333333,attendee_count:
+2014-10-03 18:13:00 -- Connected to db
+About to save record
+Saved record insert into attendances (card_number, swipe_time, kiosk_number) values ( '333333333',  '2014-10-03 18:13:00', '2' )
+Count is now: Array
+(
+    [count(*)] => 0
+)
+
+kiosk_number:2,card_number:22222,attendee_count:
+2014-10-03 18:15:04 -- Connected to db
+About to save record
+Saved record insert into attendances (card_number, swipe_time, kiosk_number) values ( '22222',  '2014-10-03 18:15:04', '2' )
+Count is now: Array
+(
+    [count(*)] => 0
+)
+
+Connection to the database - 2014-10-03 18:40:49
+Connection to the database - 2014-10-03 18:40:56
+Connection to the database - 2014-10-03 18:43:06
+kiosk_number:2,card_number:,attendee_count:
+2014-10-03 18:44:31 -- Connected to db
+About to save record
+Saved record insert into attendances (card_number, swipe_time, kiosk_number) values ( '',  '2014-10-03 18:44:31', '2' )
+Count is now: Array
+(
+    [count(*)] => 0
+)
+
+kiosk_number:2,card_number:,attendee_count:
+2014-10-03 18:44:32 -- Connected to db
+About to save record
+Saved record insert into attendances (card_number, swipe_time, kiosk_number) values ( '',  '2014-10-03 18:44:32', '2' )
+Count is now: Array
+(
+    [count(*)] => 0
+)
+
+kiosk_number:2,card_number:1111111,attendee_count:
+2014-10-03 18:44:37 -- Connected to db
+About to save record
+Saved record insert into attendances (card_number, swipe_time, kiosk_number) values ( '1111111',  '2014-10-03 18:44:37', '2' )
+Count is now: Array
+(
+    [count(*)] => 1
+)
+
+Connection to the database - 2014-10-03 18:44:54
+Connection to the database - 2014-10-03 18:44:58
+data saved - 12014-10-03 18:44:58
+kiosk_number:2,card_number:66666,attendee_count:
+2014-10-03 18:45:27 -- Connected to db
+About to save record
+Saved record insert into attendances (card_number, swipe_time, kiosk_number) values ( '66666',  '2014-10-03 18:45:27', '2' )
+Count is now: Array
+(
+    [count(*)] => 3
+)
+
