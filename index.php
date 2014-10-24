@@ -65,14 +65,14 @@ endif;
                             <div id="kiosk-nav" class="row">
                                 <div class="col-md-12">
                                     <ul class="kiosk-nav pull-right">
-                                        <li class=""><i class="fa fa-flag"></i>  Español</li>
+                                        <!-- <li class=""><i class="fa fa-flag"></i>  Español</li> -->
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Welcome. Please Register/Login Here.
+                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Atlas E-Tracker.
 
                                         <a href="http://" class="pull-right"><i class="fa fa-question-circle"></i> </a></h1>
                                 </div>
