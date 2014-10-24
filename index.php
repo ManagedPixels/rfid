@@ -17,20 +17,23 @@
     <meta content="stuff, to, help, search, engines, not" name="keywords">
     <meta content="What this page is about." name="description">
     <meta content="An Interesting Title Goes Here" name="title">
-
-    <!-- inject:css -->
-    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <!-- endinject -->
-
     <link rel="stylesheet" href="core-v3/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="core-v3/fonts/open-sans/stylesheet.css"/>
     <link rel="stylesheet" href="core-v3/fonts/fontawesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="adv_kiosks/style.css"/>
     <link rel="stylesheet" href="fonts/open-sans/stylesheet.css"/>
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
+<?php
+require_once './rfid.php';
+$id = new rfid(2);
+//echo $_POST['card_number'];
+if (isset($_POST['card_number'])):
+$id->add_count($_POST['card_number']);
+endif;
+?>
 <body>
 <!--[if lt IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -56,14 +59,14 @@
                             <div id="kiosk-nav" class="row">
                                 <div class="col-md-12">
                                     <ul class="kiosk-nav pull-right">
-                                        <li class=""><i class="fa fa-flag"></i>  Español</li>
+                                        <!-- <li class=""><i class="fa fa-flag"></i>  Español</li> -->
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Welcome. Please Register/Login Here.
+                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Atlas RF-Tracker.
 
                                         <a href="http://" class="pull-right"><i class="fa fa-question-circle"></i> </a></h1>
                                 </div>
@@ -81,38 +84,48 @@
                                             <!-- <img src="images/csf_reversed.png"> -->
 <?php //echo $this->Html->image('theme/adv_kiosks/csf_reversed.png');?>
 </a>
-                                        <h1>Welcome to ATLAS! </h1>
-
-                                        <p>Please Login in Here.</p>
+                                        <h1>Workforce Seminars! </h1>
+                                        <p>Please scan your Confrence ID card.</p>
 
                                     </div>
                                     <div class="well-off">
                                         <div class="">
-                                            <form action="">
+                                            <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+
                                                 <div class="form-group col-md-12">
-                                                    <label for="">Please swipe you Identification card</label>
-                                                    <input type="text" class="form-control" id="" placeholder="Pelase swipe you ID card">
+                                                    <label for=""><p></p></label>
+                                                    <input type="password" class="form-control" id="card_number" name="card_number" placeholder="Please swipe you Conference ID card">
                                                 </div>
-                                                <p><a class="btn btn-success btn-lg" role="button"><i class="fa fa-unlock-alt"></i> Login Here</a> <a
+                                                <div class="form-group col-sm-12">
+                                                    <input type="hidden" name="kiosk_number" value="<?php echo $id->kiosk_number?>">
+                                                </div>
+                                                <div class="form-group col-sm-12">
+                                                    <input type="hidden" name="attendee_count" value="<?php echo $id->attendee_count?>"/>
+
+                                                </div>
+
+
+<!--
+                                                <p><button class="btn btn-success btn-lg" type="submit" role="button"><i class="fa fa-unlock-alt"></i> Login Here</button> <a
                                                         href="http://#" class="btn btn-info btn-lg">
                                                     <i class="fa fa-check-circle"></i>  I'd prefer to login with License or ID
                                                 </a>
-                                                </p>
+                                                </p>-->
 
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="powered-by">
-                                        <p><a href="#" class="btn btn-info"><i class="fa fa-flag"></i>  Español</a> </p>
-                                        <p class="text-center small">&copy; 2014 Powered by Atlas</p>
+
+<div class="powered-by">
+                                        <p><a href="#" class="btn btn-info"><i class="fa fa-flag"></i>  &copy; 2014 Powered by Atlas</a> </p>
+
                                     </div>
 
 
                                 </div>
                                 <!--<div class="panel-footer">Powered By Atlas </div>-->
                             </div>
-
-                        </div>
+</div>
                     </div>
                 </div>
             </div>
@@ -120,7 +133,12 @@
     </section>
     <footer>
         <nav class="navbar navbar-fixed-bottom">
-            <div class="container-fluid">
+<?php if (isset($_POST['card_number'])):?>
+<div class="alert alert-danger" data-dismiss="alert">Your have been registered for this seminar.
+<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button></div>
+
+<?php endif;?>
+<div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <!--<div class="atlas pull-right">-->
@@ -145,9 +163,6 @@
 
 <script src="js/bootstrap/bootstrap.min.js"></script>
 <!-- endinject-->
-<script src="js/main.js"></script>
-<script src="js/app.js"></script>
-
 
 <script>
     var _gaq = [
@@ -159,6 +174,14 @@
         g.src = '//www.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g, s)
     }(document, 'script'));
+
+    $( document ).ready(function() {
+  $( "#card_number" ).focus();
+});
+
+$(".alert").alert();
+window.setTimeout(function() { $(".alert").alert('close'); }, 3000);
+
 </script>
 </body>
 </html>
