@@ -68,7 +68,7 @@ if($_POST){
 <form id="swipe_area" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"  >
 Swipe card
 <input type="hidden" name="kiosk_number" value="<?php echo $kiosk_number ?>">
-<input type="hidden" name="attendee_count" value="<?php echo $attendee_count ?>"/>
+ <input type="hidden" name="attendee_count" value="<?php echo $id->attendee_count ?>"/>
 <input name="card_number" autofocus type="password">
 
 
