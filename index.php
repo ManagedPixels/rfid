@@ -17,19 +17,13 @@
     <meta content="stuff, to, help, search, engines, not" name="keywords">
     <meta content="What this page is about." name="description">
     <meta content="An Interesting Title Goes Here" name="title">
-
-    <!-- inject:css -->
-    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <!-- endinject -->
-
     <link rel="stylesheet" href="core-v3/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="core-v3/fonts/open-sans/stylesheet.css"/>
     <link rel="stylesheet" href="core-v3/fonts/fontawesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="adv_kiosks/style.css"/>
     <link rel="stylesheet" href="fonts/open-sans/stylesheet.css"/>
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <?php
@@ -65,14 +59,14 @@ endif;
                             <div id="kiosk-nav" class="row">
                                 <div class="col-md-12">
                                     <ul class="kiosk-nav pull-right">
-                                        <li class=""><i class="fa fa-flag"></i>  Español</li>
+                                        <!-- <li class=""><i class="fa fa-flag"></i>  Español</li> -->
                                     </ul>
                                 </div>
                             </div>
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Welcome. Please Register/Login Here.
+                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Atlas RF-Tracker.
 
                                         <a href="http://" class="pull-right"><i class="fa fa-question-circle"></i> </a></h1>
                                 </div>
@@ -90,9 +84,8 @@ endif;
                                             <!-- <img src="images/csf_reversed.png"> -->
 <?php //echo $this->Html->image('theme/adv_kiosks/csf_reversed.png');?>
 </a>
-                                        <h1>Welcome to ATLAS! </h1>
-
-                                        <p>Please Login in Here.</p>
+                                        <h1>Workforce Seminars! </h1>
+                                        <p>Please scan your Confrence ID card.</p>
 
                                     </div>
                                     <div class="well-off">
@@ -100,8 +93,8 @@ endif;
                                             <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
 
                                                 <div class="form-group col-md-12">
-                                                    <label for="">Please swipe you Identification card</label>
-                                                    <input type="password" class="form-control" id="card_number" name="card_number" placeholder="Pelase swipe you ID card">
+                                                    <label for=""><p></p></label>
+                                                    <input type="password" class="form-control" id="card_number" name="card_number" placeholder="Please swipe you Conference ID card">
                                                 </div>
                                                 <div class="form-group col-sm-12">
                                                     <input type="hidden" name="kiosk_number" value="<?php echo $id->kiosk_number?>">
@@ -122,7 +115,8 @@ endif;
                                             </form>
                                         </div>
                                     </div>
-                                    <div class="powered-by">
+
+<div class="powered-by">
                                         <p><a href="#" class="btn btn-info"><i class="fa fa-flag"></i>  &copy; 2014 Powered by Atlas</a> </p>
 
                                     </div>
@@ -131,8 +125,7 @@ endif;
                                 </div>
                                 <!--<div class="panel-footer">Powered By Atlas </div>-->
                             </div>
-
-                        </div>
+</div>
                     </div>
                 </div>
             </div>
@@ -140,7 +133,12 @@ endif;
     </section>
     <footer>
         <nav class="navbar navbar-fixed-bottom">
-            <div class="container-fluid">
+<?php if (isset($_POST['card_number'])):?>
+<div class="alert alert-danger" data-dismiss="alert">Your have been registered for this seminar.
+<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button></div>
+
+<?php endif;?>
+<div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
                         <!--<div class="atlas pull-right">-->
@@ -165,9 +163,6 @@ endif;
 
 <script src="js/bootstrap/bootstrap.min.js"></script>
 <!-- endinject-->
-<script src="js/main.js"></script>
-<script src="js/app.js"></script>
-
 
 <script>
     var _gaq = [
@@ -183,6 +178,10 @@ endif;
     $( document ).ready(function() {
   $( "#card_number" ).focus();
 });
+
+$(".alert").alert();
+window.setTimeout(function() { $(".alert").alert('close'); }, 3000);
+
 </script>
 </body>
 </html>

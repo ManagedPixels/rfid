@@ -227,3 +227,402 @@ Connection to the database - 2014-10-24 14:08:04
 Data saved - 12014-10-24 14:08:04
 Connection to the database - 2014-10-24 14:08:38
 Connection to the database - 2014-10-24 14:09:43
+Connection to the database - 2014-10-24 14:20:46
+Connection to the database - 2014-10-24 14:21:25
+Connection to the database - 2014-10-24 14:21:25
+Connection to the database - 2014-10-24 14:21:54
+Connection to the database - 2014-10-24 14:23:53
+Connection to the database - 2014-10-24 14:24:47
+Connection to the database - 2014-10-24 14:24:49
+Connection to the database - 2014-10-24 14:27:53
+Data saved - 12014-10-24 14:27:53
+Connection to the database - 2014-10-24 14:37:09
+Connection to the database - 2014-10-24 14:37:15
+Data saved - 12014-10-24 14:37:15
+Connection to the database - 2014-10-24 14:37:18
+Data saved - 12014-10-24 14:37:18
+Connection to the database - 2014-10-24 14:39:45
+Data saved - 12014-10-24 14:39:45
+Connection to the database - 2014-10-24 14:40:37
+Data saved - 12014-10-24 14:40:37
+Connection to the database - 2014-10-24 14:40:46
+Connection to the database - 2014-10-24 14:40:49
+Data saved - 12014-10-24 14:40:49
+Connection to the database - 2014-10-24 14:41:01
+Data saved - 12014-10-24 14:41:01
+Connection to the database - 2014-10-24 14:41:08
+Data saved - 12014-10-24 14:41:08
+Connection to the database - 2014-10-24 14:41:11
+Data saved - 12014-10-24 14:41:11
+Connection to the database - 2014-10-24 14:41:13
+Data saved - 12014-10-24 14:41:13
+Connection to the database - 2014-10-24 14:41:18
+Data saved - 12014-10-24 14:41:18
+Connection to the database - 2014-10-24 14:41:30
+Data saved - 12014-10-24 14:41:30
+Connection to the database - 2014-10-24 14:41:33
+Data saved - 12014-10-24 14:41:33
+Connection to the database - 2014-10-24 14:41:38
+Data saved - 12014-10-24 14:41:38
+Connection to the database - 2014-10-24 14:41:51
+Data saved - 12014-10-24 14:41:51
+Connection to the database - 2014-10-24 14:42:22
+Data saved - 12014-10-24 14:42:22
+Connection to the database - 2014-10-24 14:42:30
+Data saved - 12014-10-24 14:42:30
+Connection to the database - 2014-10-24 14:42:33
+Data saved - 12014-10-24 14:42:33
+Connection to the database - 2014-10-24 14:42:47
+Data saved - 12014-10-24 14:42:47
+Connection to the database - 2014-10-24 14:42:51
+Data saved - 12014-10-24 14:42:51
+Connection to the database - 2014-10-24 14:42:58
+Data saved - 12014-10-24 14:42:58
+Connection to the database - 2014-10-24 14:43:11
+Data saved - 12014-10-24 14:43:11
+Connection to the database - 2014-10-24 14:43:20
+Data saved - 12014-10-24 14:43:20
+Connection to the database - 2014-10-24 14:48:50
+Connection to the database - 2014-10-24 14:49:05
+Data saved - 12014-10-24 14:49:05
+Connection to the database - 2014-10-24 14:49:14
+Data saved - 12014-10-24 14:49:14
+Connection to the database - 2014-10-24 14:49:17
+Data saved - 12014-10-24 14:49:17
+Connection to the database - 2014-10-24 14:51:15
+Data saved - 12014-10-24 14:51:15
+Connection to the database - 2014-10-24 14:51:23
+Data saved - 12014-10-24 14:51:23
+Connection to the database - 2014-10-24 14:55:11
+Connection to the database - 2014-10-24 14:55:18
+Data saved - 12014-10-24 14:55:18
+Connection to the database - 2014-10-24 14:55:30
+Data saved - 12014-10-24 14:55:30
+Connection to the database - 2014-10-24 14:56:00
+Connection to the database - 2014-10-24 14:56:05
+Connection to the database - 2014-10-24 14:56:15
+Data saved - 12014-10-24 14:56:15
+Connection to the database - 2014-10-24 14:57:10
+Connection to the database - 2014-10-24 14:57:14
+Data saved - 12014-10-24 14:57:14
+Connection to the database - 2014-10-24 14:57:15
+Data saved - 12014-10-24 14:57:15
+Connection to the database - 2014-10-24 14:59:11
+Data saved - 12014-10-24 14:59:11
+Connection to the database - 2014-10-24 14:59:40
+Data saved - 12014-10-24 14:59:40
+Connection to the database - 2014-10-24 15:01:22
+Data saved - 12014-10-24 15:01:22
+Connection to the database - 2014-10-24 15:01:32
+Data saved - 12014-10-24 15:01:32
+Connection to the database - 2014-10-24 15:01:35
+Data saved - 12014-10-24 15:01:35
+Connection to the database - 2014-10-24 15:01:47
+Data saved - 12014-10-24 15:01:47
+Connection to the database - 2014-10-24 15:02:07
+Data saved - 12014-10-24 15:02:07
+Connection to the database - 2014-10-24 15:02:14
+Connection to the database - 2014-10-24 15:02:24
+Data saved - 12014-10-24 15:02:24
+Connection to the database - 2014-10-24 15:04:15
+Data saved - 12014-10-24 15:04:15
+Connection to the database - 2014-10-24 15:04:36
+Data saved - 12014-10-24 15:04:36
+Connection to the database - 2014-10-24 15:04:54
+Connection to the database - 2014-10-24 15:05:40
+Connection to the database - 2014-10-24 15:06:07
+Connection to the database - 2014-10-24 15:06:16
+Data saved - 12014-10-24 15:06:16
+Connection to the database - 2014-10-24 15:06:35
+Data saved - 12014-10-24 15:06:35
+Connection to the database - 2014-10-24 15:15:07
+Data saved - 12014-10-24 15:15:07
+Connection to the database - 2014-10-24 15:15:09
+Data saved - 12014-10-24 15:15:09
+Connection to the database - 2014-10-24 15:15:19
+Data saved - 12014-10-24 15:15:19
+Connection to the database - 2014-10-24 15:15:58
+Connection to the database - 2014-10-24 15:15:58
+Data saved - 12014-10-24 15:15:58
+Connection to the database - 2014-10-24 15:16:08
+Data saved - 12014-10-24 15:16:08
+Connection to the database - 2014-10-24 15:16:08
+Data saved - 12014-10-24 15:16:08
+Connection to the database - 2014-10-24 15:16:12
+Data saved - 12014-10-24 15:16:12
+Connection to the database - 2014-10-24 15:16:13
+Data saved - 12014-10-24 15:16:13
+Connection to the database - 2014-10-24 15:16:17
+Data saved - 12014-10-24 15:16:17
+Connection to the database - 2014-10-24 15:16:17
+Data saved - 12014-10-24 15:16:17
+Connection to the database - 2014-10-24 15:18:01
+Data saved - 12014-10-24 15:18:01
+Connection to the database - 2014-10-24 15:18:01
+Data saved - 12014-10-24 15:18:01
+Connection to the database - 2014-10-24 15:18:56
+Data saved - 12014-10-24 15:18:56
+Connection to the database - 2014-10-24 15:18:56
+Data saved - 12014-10-24 15:18:56
+Connection to the database - 2014-10-24 15:19:03
+Data saved - 12014-10-24 15:19:03
+Connection to the database - 2014-10-24 15:19:03
+Data saved - 12014-10-24 15:19:03
+Connection to the database - 2014-10-24 15:19:03
+Data saved - 12014-10-24 15:19:03
+Connection to the database - 2014-10-24 15:19:14
+Data saved - 12014-10-24 15:19:14
+Connection to the database - 2014-10-24 15:19:14
+Data saved - 12014-10-24 15:19:14
+Connection to the database - 2014-10-24 15:19:52
+Data saved - 12014-10-24 15:19:52
+Connection to the database - 2014-10-24 15:19:52
+Data saved - 12014-10-24 15:19:52
+Connection to the database - 2014-10-24 15:19:52
+Data saved - 12014-10-24 15:19:52
+Connection to the database - 2014-10-24 15:20:22
+Data saved - 12014-10-24 15:20:22
+Connection to the database - 2014-10-24 15:20:22
+Data saved - 12014-10-24 15:20:22
+Connection to the database - 2014-10-24 15:20:22
+Data saved - 12014-10-24 15:20:22
+Connection to the database - 2014-10-24 15:20:29
+Data saved - 12014-10-24 15:20:29
+Connection to the database - 2014-10-24 15:20:29
+Data saved - 12014-10-24 15:20:29
+Connection to the database - 2014-10-24 15:20:50
+Data saved - 12014-10-24 15:20:50
+Connection to the database - 2014-10-24 15:20:50
+Data saved - 12014-10-24 15:20:50
+Connection to the database - 2014-10-24 15:20:53
+Data saved - 12014-10-24 15:20:53
+Connection to the database - 2014-10-24 15:20:53
+Data saved - 12014-10-24 15:20:53
+Connection to the database - 2014-10-24 15:21:02
+Data saved - 12014-10-24 15:21:02
+Connection to the database - 2014-10-24 15:21:02
+Data saved - 12014-10-24 15:21:02
+Connection to the database - 2014-10-24 15:21:07
+Data saved - 12014-10-24 15:21:07
+Connection to the database - 2014-10-24 15:21:07
+Data saved - 12014-10-24 15:21:07
+Connection to the database - 2014-10-24 15:21:18
+Data saved - 12014-10-24 15:21:18
+Connection to the database - 2014-10-24 15:21:18
+Data saved - 12014-10-24 15:21:18
+Connection to the database - 2014-10-24 15:22:00
+Connection to the database - 2014-10-24 15:22:00
+Connection to the database - 2014-10-24 15:22:00
+Data saved - 12014-10-24 15:22:00
+Data saved - 12014-10-24 15:22:00
+Data saved - 12014-10-24 15:22:00
+Connection to the database - 2014-10-24 15:22:08
+Data saved - 12014-10-24 15:22:08
+Connection to the database - 2014-10-24 15:22:08
+Data saved - 12014-10-24 15:22:08
+Connection to the database - 2014-10-24 15:22:14
+Data saved - 12014-10-24 15:22:14
+Connection to the database - 2014-10-24 15:22:14
+Data saved - 12014-10-24 15:22:14
+Connection to the database - 2014-10-24 15:22:25
+Data saved - 12014-10-24 15:22:25
+Connection to the database - 2014-10-24 15:22:25
+Data saved - 12014-10-24 15:22:25
+Connection to the database - 2014-10-24 15:22:32
+Data saved - 12014-10-24 15:22:32
+Connection to the database - 2014-10-24 15:22:32
+Data saved - 12014-10-24 15:22:32
+Connection to the database - 2014-10-24 15:22:48
+Data saved - 12014-10-24 15:22:48
+Connection to the database - 2014-10-24 15:22:48
+Data saved - 12014-10-24 15:22:48
+Connection to the database - 2014-10-24 15:22:52
+Data saved - 12014-10-24 15:22:52
+Connection to the database - 2014-10-24 15:22:52
+Data saved - 12014-10-24 15:22:52
+Connection to the database - 2014-10-24 15:22:55
+Data saved - 12014-10-24 15:22:55
+Connection to the database - 2014-10-24 15:22:55
+Data saved - 12014-10-24 15:22:55
+Connection to the database - 2014-10-24 15:23:07
+Data saved - 12014-10-24 15:23:07
+Connection to the database - 2014-10-24 15:23:07
+Data saved - 12014-10-24 15:23:07
+Connection to the database - 2014-10-24 15:23:10
+Data saved - 12014-10-24 15:23:10
+Connection to the database - 2014-10-24 15:23:10
+Data saved - 12014-10-24 15:23:10
+Connection to the database - 2014-10-24 15:23:14
+Data saved - 12014-10-24 15:23:14
+Connection to the database - 2014-10-24 15:23:14
+Connection to the database - 2014-10-24 15:23:14
+Data saved - 12014-10-24 15:23:14
+Data saved - 12014-10-24 15:23:14
+Connection to the database - 2014-10-24 15:23:17
+Data saved - 12014-10-24 15:23:17
+Connection to the database - 2014-10-24 15:23:17
+Data saved - 12014-10-24 15:23:17
+Connection to the database - 2014-10-24 15:23:20
+Data saved - 12014-10-24 15:23:20
+Connection to the database - 2014-10-24 15:23:20
+Data saved - 12014-10-24 15:23:20
+Connection to the database - 2014-10-24 15:23:24
+Data saved - 12014-10-24 15:23:24
+Connection to the database - 2014-10-24 15:23:24
+Data saved - 12014-10-24 15:23:24
+Connection to the database - 2014-10-24 15:23:27
+Data saved - 12014-10-24 15:23:27
+Connection to the database - 2014-10-24 15:23:27
+Data saved - 12014-10-24 15:23:27
+Connection to the database - 2014-10-24 15:23:40
+Connection to the database - 2014-10-24 15:23:41
+Data saved - 12014-10-24 15:23:40
+Data saved - 12014-10-24 15:23:41
+Connection to the database - 2014-10-24 15:23:41
+Data saved - 12014-10-24 15:23:41
+Connection to the database - 2014-10-24 15:23:44
+Data saved - 12014-10-24 15:23:44
+Connection to the database - 2014-10-24 15:23:44
+Data saved - 12014-10-24 15:23:44
+Connection to the database - 2014-10-24 15:23:50
+Data saved - 12014-10-24 15:23:50
+Connection to the database - 2014-10-24 15:23:50
+Data saved - 12014-10-24 15:23:50
+Connection to the database - 2014-10-24 15:23:53
+Data saved - 12014-10-24 15:23:53
+Connection to the database - 2014-10-24 15:23:53
+Data saved - 12014-10-24 15:23:53
+Connection to the database - 2014-10-24 15:24:01
+Connection to the database - 2014-10-24 15:24:01
+Data saved - 12014-10-24 15:24:01
+Data saved - 12014-10-24 15:24:01
+Connection to the database - 2014-10-24 15:24:10
+Data saved - 12014-10-24 15:24:10
+Connection to the database - 2014-10-24 15:24:10
+Data saved - 12014-10-24 15:24:10
+Connection to the database - 2014-10-24 15:25:38
+Data saved - 12014-10-24 15:25:38
+Connection to the database - 2014-10-24 15:25:40
+Data saved - 12014-10-24 15:25:40
+Connection to the database - 2014-10-24 15:26:45
+Data saved - 12014-10-24 15:26:45
+Connection to the database - 2014-10-24 15:26:51
+Data saved - 12014-10-24 15:26:51
+Connection to the database - 2014-10-24 15:27:20
+Data saved - 12014-10-24 15:27:20
+Connection to the database - 2014-10-24 15:27:33
+Data saved - 12014-10-24 15:27:33
+Connection to the database - 2014-10-24 15:27:35
+Data saved - 12014-10-24 15:27:35
+Connection to the database - 2014-10-24 15:28:03
+Data saved - 12014-10-24 15:28:03
+Connection to the database - 2014-10-24 15:28:08
+Data saved - 12014-10-24 15:28:08
+Connection to the database - 2014-10-24 15:28:40
+Data saved - 12014-10-24 15:28:40
+Connection to the database - 2014-10-24 15:28:42
+Data saved - 12014-10-24 15:28:42
+Connection to the database - 2014-10-24 15:31:38
+Data saved - 12014-10-24 15:31:38
+Connection to the database - 2014-10-24 15:32:56
+Data saved - 12014-10-24 15:32:56
+Connection to the database - 2014-10-24 15:33:16
+Data saved - 12014-10-24 15:33:16
+Connection to the database - 2014-10-24 15:33:36
+Data saved - 12014-10-24 15:33:36
+Connection to the database - 2014-10-24 15:35:12
+Data saved - 12014-10-24 15:35:12
+Connection to the database - 2014-10-24 15:37:11
+Connection to the database - 2014-10-24 15:37:12
+Data saved - 12014-10-24 15:37:12
+Connection to the database - 2014-10-24 15:38:05
+Connection to the database - 2014-10-24 15:38:05
+Data saved - 12014-10-24 15:38:05
+Connection to the database - 2014-10-24 15:38:08
+Connection to the database - 2014-10-24 15:38:09
+Data saved - 12014-10-24 15:38:09
+Connection to the database - 2014-10-24 15:38:09
+Connection to the database - 2014-10-24 15:39:13
+Data saved - 12014-10-24 15:39:13
+Connection to the database - 2014-10-24 15:39:13
+Data saved - 12014-10-24 15:39:13
+Connection to the database - 2014-10-24 15:40:06
+Data saved - 12014-10-24 15:40:06
+Connection to the database - 2014-10-24 15:40:06
+Data saved - 12014-10-24 15:40:06
+Connection to the database - 2014-10-24 15:40:11
+Data saved - 12014-10-24 15:40:11
+Connection to the database - 2014-10-24 15:40:12
+Data saved - 12014-10-24 15:40:12
+Connection to the database - 2014-10-24 15:40:15
+Data saved - 12014-10-24 15:40:15
+Connection to the database - 2014-10-24 15:40:16
+Data saved - 12014-10-24 15:40:16
+Connection to the database - 2014-10-24 15:40:17
+Data saved - 12014-10-24 15:40:17
+Connection to the database - 2014-10-24 15:40:24
+Data saved - 12014-10-24 15:40:24
+Connection to the database - 2014-10-24 15:40:24
+Data saved - 12014-10-24 15:40:24
+Connection to the database - 2014-10-24 15:40:28
+Data saved - 12014-10-24 15:40:28
+Connection to the database - 2014-10-24 15:40:28
+Data saved - 12014-10-24 15:40:28
+Connection to the database - 2014-10-24 15:40:29
+Data saved - 12014-10-24 15:40:29
+Connection to the database - 2014-10-24 15:40:33
+Data saved - 12014-10-24 15:40:33
+Connection to the database - 2014-10-24 15:40:33
+Data saved - 12014-10-24 15:40:33
+Connection to the database - 2014-10-24 15:40:37
+Data saved - 12014-10-24 15:40:37
+Connection to the database - 2014-10-24 15:40:37
+Data saved - 12014-10-24 15:40:37
+Connection to the database - 2014-10-24 15:40:40
+Data saved - 12014-10-24 15:40:40
+Connection to the database - 2014-10-24 15:40:42
+Data saved - 12014-10-24 15:40:42
+Connection to the database - 2014-10-24 15:40:44
+Data saved - 12014-10-24 15:40:44
+Connection to the database - 2014-10-24 15:41:41
+Connection to the database - 2014-10-24 15:41:41
+Data saved - 12014-10-24 15:41:41
+Data saved - 12014-10-24 15:41:41
+Connection to the database - 2014-10-24 15:42:29
+Data saved - 12014-10-24 15:42:29
+Connection to the database - 2014-10-24 15:43:30
+Connection to the database - 2014-10-24 15:43:30
+Data saved - 12014-10-24 15:43:30
+Data saved - 12014-10-24 15:43:30
+Connection to the database - 2014-10-24 15:44:32
+Data saved - 12014-10-24 15:44:32
+Connection to the database - 2014-10-24 15:44:54
+Data saved - 12014-10-24 15:44:54
+Connection to the database - 2014-10-24 15:45:24
+Data saved - 12014-10-24 15:45:24
+Connection to the database - 2014-10-24 15:45:25
+Data saved - 12014-10-24 15:45:25
+Connection to the database - 2014-10-24 15:45:57
+Data saved - 12014-10-24 15:45:57
+Connection to the database - 2014-10-24 15:45:59
+Data saved - 12014-10-24 15:45:59
+Connection to the database - 2014-10-24 15:46:52
+Data saved - 12014-10-24 15:46:52
+Connection to the database - 2014-10-24 15:46:54
+Data saved - 12014-10-24 15:46:54
+Connection to the database - 2014-10-24 15:47:10
+Data saved - 12014-10-24 15:47:10
+Connection to the database - 2014-10-24 15:47:54
+Data saved - 12014-10-24 15:47:54
+Connection to the database - 2014-10-24 15:50:51
+Data saved - 12014-10-24 15:50:51
+Connection to the database - 2014-10-24 15:50:53
+Data saved - 12014-10-24 15:50:53
+Connection to the database - 2014-10-24 15:51:24
+Data saved - 12014-10-24 15:51:24
+Connection to the database - 2014-10-24 15:51:36
+Data saved - 12014-10-24 15:51:36
+Connection to the database - 2014-10-24 15:55:56
+Data saved - 12014-10-24 15:55:56
+Connection to the database - 2014-10-24 15:57:12
+Data saved - 12014-10-24 15:57:12
