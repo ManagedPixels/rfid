@@ -33,7 +33,7 @@ class rfid {
         try {
             $this->pdo = new PDO('mysql:host=localhost;dbname=rfid_development', 'root', '');
             $this->log("Connection to the database - " . $this->swipe_time);
-            print_r($this->pdo->errorInfo());
+            //print_r($this->pdo->errorInfo());
         } catch (Exception $ex) {
             //$this->log("Error connection to the database");
             echo $ex->getMessage();
@@ -61,7 +61,7 @@ class rfid {
                 $qry = "INSERT INTO attendances(card_number, swipe_time, kiosk_number) VALUES( '$card_number',  '$swipe_time', '$kiosk_number' )";
                 if($p = $this->pdo->exec($qry)):
                   //   print_r($this->pdo->errorInfo());
-                $this->log('data saved - '. $p .$this->swipe_time);
+                $this->log('Data saved - '. $p .$this->swipe_time);
                 endif;
             } catch (Exception $exc) {
                 //echo $exc->getTraceAsString();

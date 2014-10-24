@@ -4,12 +4,13 @@
 /* HTML output */
 html,
 body {
-  height: 728px !important;
+  /*height: 728px !important;*/
   font-family: 'OpenSansRegular', Arial, sans-serif;
   background-color: #00223e;
   background-image: url("../images/kioxk-background.jpg");
   background-repeat: no-repeat;
-  max-width: 1024px;
+  background-size: cover;
+  /*max-width: 1024px;*/
   boder-bottom: #00223e;
   -webkit-font-smoothing: antialiased !important;
 }

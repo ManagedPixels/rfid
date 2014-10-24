@@ -91,3 +91,139 @@ Count is now: Array
 
 Connection to the database - 2014-10-03 18:52:30
 Connection to the database - 2014-10-03 18:53:41
+Connection to the database - 2014-10-03 18:57:44
+Connection to the database - 2014-10-03 18:59:00
+Connection to the database - 2014-10-03 18:59:51
+data saved - 12014-10-03 18:59:51
+Connection to the database - 2014-10-21 19:26:50
+Connection to the database - 2014-10-21 19:31:53
+Connection to the database - 2014-10-21 19:31:55
+Connection to the database - 2014-10-21 19:33:13
+Connection to the database - 2014-10-21 19:34:38
+Connection to the database - 2014-10-21 19:35:14
+Connection to the database - 2014-10-21 19:35:14
+Connection to the database - 2014-10-21 19:35:14
+data saved - 12014-10-21 19:35:14
+data saved - 12014-10-21 19:35:14
+data saved - 12014-10-21 19:35:14
+Connection to the database - 2014-10-21 19:44:14
+Connection to the database - 2014-10-21 19:44:14
+Connection to the database - 2014-10-21 19:44:14
+data saved - 12014-10-21 19:44:14
+data saved - 12014-10-21 19:44:14
+data saved - 12014-10-21 19:44:14
+Connection to the database - 2014-10-23 17:30:49
+Connection to the database - 2014-10-23 17:30:51
+Connection to the database - 2014-10-23 17:31:20
+Connection to the database - 2014-10-23 17:32:08
+Connection to the database - 2014-10-23 17:32:46
+Connection to the database - 2014-10-23 17:32:56
+Connection to the database - 2014-10-23 17:32:56
+Connection to the database - 2014-10-23 17:32:56
+Connection to the database - 2014-10-23 17:33:06
+Connection to the database - 2014-10-23 17:33:05
+Connection to the database - 2014-10-23 17:33:11
+Connection to the database - 2014-10-23 17:33:58
+Connection to the database - 2014-10-23 17:33:58
+Connection to the database - 2014-10-23 17:34:05
+Connection to the database - 2014-10-23 17:41:02
+Connection to the database - 2014-10-23 17:41:05
+Connection to the database - 2014-10-23 17:48:25
+Connection to the database - 2014-10-23 18:03:24
+Connection to the database - 2014-10-23 18:06:44
+Connection to the database - 2014-10-23 18:21:37
+Connection to the database - 2014-10-23 18:21:39
+Connection to the database - 2014-10-23 18:22:15
+Connection to the database - 2014-10-23 18:22:15
+Connection to the database - 2014-10-23 18:25:25
+Connection to the database - 2014-10-23 18:37:36
+Connection to the database - 2014-10-23 18:37:36
+Connection to the database - 2014-10-23 18:39:46
+Connection to the database - 2014-10-23 18:39:46
+Connection to the database - 2014-10-23 18:40:16
+Connection to the database - 2014-10-23 18:40:16
+Connection to the database - 2014-10-23 18:41:44
+Connection to the database - 2014-10-23 18:41:44
+Connection to the database - 2014-10-23 18:42:04
+Connection to the database - 2014-10-23 18:42:04
+Connection to the database - 2014-10-23 18:42:04
+Connection to the database - 2014-10-23 18:42:09
+Connection to the database - 2014-10-23 18:42:13
+Connection to the database - 2014-10-23 18:42:16
+Connection to the database - 2014-10-23 18:42:17
+Connection to the database - 2014-10-23 18:42:24
+Connection to the database - 2014-10-23 18:43:16
+Connection to the database - 2014-10-23 18:43:16
+Connection to the database - 2014-10-23 18:43:16
+data saved - 12014-10-23 18:43:16
+data saved - 12014-10-23 18:43:16
+Connection to the database - 2014-10-23 18:43:20
+Connection to the database - 2014-10-23 18:43:30
+data saved - 12014-10-23 18:43:30
+Connection to the database - 2014-10-23 18:43:32
+Connection to the database - 2014-10-23 18:43:40
+data saved - 12014-10-23 18:43:40
+Connection to the database - 2014-10-23 18:43:44
+Connection to the database - 2014-10-23 18:44:15
+data saved - 12014-10-23 18:44:15
+Connection to the database - 2014-10-23 18:47:55
+data saved - 12014-10-23 18:47:55
+Connection to the database - 2014-10-23 18:48:01
+data saved - 12014-10-23 18:48:01
+Connection to the database - 2014-10-23 18:48:18
+data saved - 12014-10-23 18:48:18
+Connection to the database - 2014-10-23 18:48:18
+data saved - 12014-10-23 18:48:18
+Connection to the database - 2014-10-23 18:48:49
+Connection to the database - 2014-10-23 18:48:49
+data saved - 12014-10-23 18:48:49
+data saved - 12014-10-23 18:48:49
+Connection to the database - 2014-10-24 13:43:01
+Connection to the database - 2014-10-24 13:43:03
+Connection to the database - 2014-10-24 13:44:19
+Connection to the database - 2014-10-24 13:44:19
+Connection to the database - 2014-10-24 13:44:39
+Connection to the database - 2014-10-24 13:44:53
+Connection to the database - 2014-10-24 13:44:53
+data saved - 12014-10-24 13:44:53
+Connection to the database - 2014-10-24 13:46:12
+data saved - 12014-10-24 13:46:12
+Connection to the database - 2014-10-24 13:46:13
+data saved - 12014-10-24 13:46:13
+Connection to the database - 2014-10-24 13:46:38
+Connection to the database - 2014-10-24 13:46:38
+data saved - 12014-10-24 13:46:38
+data saved - 12014-10-24 13:46:38
+Connection to the database - 2014-10-24 13:46:56
+Connection to the database - 2014-10-24 13:46:56
+data saved - 12014-10-24 13:46:56
+data saved - 12014-10-24 13:46:56
+Connection to the database - 2014-10-24 13:52:22
+Connection to the database - 2014-10-24 13:52:22
+Data saved - 12014-10-24 13:52:22
+Data saved - 12014-10-24 13:52:22
+Connection to the database - 2014-10-24 13:55:44
+Connection to the database - 2014-10-24 13:55:44
+Data saved - 12014-10-24 13:55:44
+Connection to the database - 2014-10-24 13:56:06
+Data saved - 12014-10-24 13:56:06
+Connection to the database - 2014-10-24 13:56:06
+Data saved - 12014-10-24 13:56:06
+Connection to the database - 2014-10-24 13:57:01
+Data saved - 12014-10-24 13:57:01
+Connection to the database - 2014-10-24 13:57:04
+Connection to the database - 2014-10-24 13:57:06
+Connection to the database - 2014-10-24 13:57:09
+Connection to the database - 2014-10-24 14:00:35
+Connection to the database - 2014-10-24 14:00:51
+Data saved - 12014-10-24 14:00:51
+Connection to the database - 2014-10-24 14:02:23
+Connection to the database - 2014-10-24 14:02:30
+Connection to the database - 2014-10-24 14:03:39
+Data saved - 12014-10-24 14:03:39
+Connection to the database - 2014-10-24 14:06:18
+Data saved - 12014-10-24 14:06:18
+Connection to the database - 2014-10-24 14:08:04
+Data saved - 12014-10-24 14:08:04
+Connection to the database - 2014-10-24 14:08:38
+Connection to the database - 2014-10-24 14:09:43

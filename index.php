@@ -32,15 +32,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<?php 
+<?php
 require_once './rfid.php';
-  $id = new rfid(2);
-  //echo $_POST['card_number'];
-  if(isset($_POST['card_number'])):
-      $id->add_count($_POST['card_number']);
-  endif;
+$id = new rfid(2);
+//echo $_POST['card_number'];
+if (isset($_POST['card_number'])):
+$id->add_count($_POST['card_number']);
+endif;
 ?>
-
 <body>
 <!--[if lt IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -98,22 +97,22 @@ require_once './rfid.php';
                                     </div>
                                     <div class="well-off">
                                         <div class="">
-                                            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
-                                     
+                                            <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+
                                                 <div class="form-group col-md-12">
                                                     <label for="">Please swipe you Identification card</label>
-                                                    <input type="password" class="form-control" name="card_number" placeholder="Pelase swipe you ID card">
+                                                    <input type="password" class="form-control" id="card_number" name="card_number" placeholder="Pelase swipe you ID card">
                                                 </div>
                                                 <div class="form-group col-sm-12">
-                                                    <input type="hidden" name="kiosk_number" value="<?php echo $id->kiosk_number ?>">
+                                                    <input type="hidden" name="kiosk_number" value="<?php echo $id->kiosk_number?>">
                                                 </div>
                                                 <div class="form-group col-sm-12">
-                                                    <input type="hidden" name="attendee_count" value="<?php echo $id->attendee_count ?>"/>
-                                                  
+                                                    <input type="hidden" name="attendee_count" value="<?php echo $id->attendee_count?>"/>
+
                                                 </div>
 
-                                              
-<!--                                            
+
+<!--
                                                 <p><button class="btn btn-success btn-lg" type="submit" role="button"><i class="fa fa-unlock-alt"></i> Login Here</button> <a
                                                         href="http://#" class="btn btn-info btn-lg">
                                                     <i class="fa fa-check-circle"></i>  I'd prefer to login with License or ID
@@ -125,7 +124,7 @@ require_once './rfid.php';
                                     </div>
                                     <div class="powered-by">
                                         <p><a href="#" class="btn btn-info"><i class="fa fa-flag"></i>  &copy; 2014 Powered by Atlas</a> </p>
-                                       
+
                                     </div>
 
 
@@ -180,6 +179,10 @@ require_once './rfid.php';
         g.src = '//www.google-analytics.com/ga.js';
         s.parentNode.insertBefore(g, s)
     }(document, 'script'));
+
+    $( document ).ready(function() {
+  $( "#card_number" ).focus();
+});
 </script>
 </body>
 </html>
