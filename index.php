@@ -84,8 +84,8 @@ endif;
                                             <!-- <img src="images/csf_reversed.png"> -->
 <?php //echo $this->Html->image('theme/adv_kiosks/csf_reversed.png');?>
 </a>
-                                        <h1>Workforce Seminars! </h1>
-                                        <p>Please scan your Confrence ID card.</p>
+                                        <h1>Welceom to the Florida Workforce Summit </h1>
+                                        <p>Please place your card on the RIFD reader.</p>
 
                                     </div>
                                     <div class="well-off">
