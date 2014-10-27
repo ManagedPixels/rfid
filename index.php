@@ -164,7 +164,7 @@ endif;
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 <!-- inject:js -->
 
-<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="bootstrap.min.js"></script>
 <!-- endinject-->
 
 <script>
