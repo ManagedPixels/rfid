@@ -32,7 +32,7 @@ class rfid {
 		}
 
 		try {
-			$this->pdo = new PDO('mysql:host=localhost;dbname=rfid', 'root', 'atlas');
+			$this->pdo = new PDO('mysql:host=localhost;dbname=rfid', 'root', 'atlas1');
 			$this->log("Connection to the database - ".$this->swipe_time);
 			//print_r($this->pdo->errorInfo());
 		} catch (Exception $ex) {
