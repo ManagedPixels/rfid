@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="core-v3/fonts/fontawesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="adv_kiosks/style.css"/>
     <!-- <link rel="stylesheet" href="fonts/open-sans/stylesheet.css"/> -->
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="modernizr.js"></script>
 
 </head>
 
@@ -66,7 +66,7 @@ endif;
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Atlas RF-Tracker
+                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Atlas RFID Attendance Tracker
 
                                         <a href="http://" class="pull-right">
                                         <!-- <i class="fa fa-question-circle"></i>  -->
@@ -88,7 +88,7 @@ endif;
 <?php //echo $this->Html->image('theme/adv_kiosks/csf_reversed.png');?>
 </a>
                                         <h1>Welcome to the Florida Workforce Summit </h1>
-                                        <p>Please place your card on the RRID reader (right).</p>
+                                        <p>Please place your card on the RFID reader, located on the right.</p>
 
                                     </div>
                                     <div class="well-off">
@@ -137,7 +137,7 @@ endif;
     <footer>
         <nav class="navbar navbar-fixed-bottom">
 <?php if (isset($_POST['card_number'])):?>
-<div class="alert alert-danger" data-dismiss="alert">Your have been registered for this seminar.
+<div class="alert alert-success" data-dismiss="alert">Your have been registered for this seminar.
 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button></div>
 
 <?php endif;?>
@@ -160,24 +160,13 @@ endif;
     </footer>
 </div>
 <!-- /container -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+<script src="jquery.min.js"></script>
 <!-- inject:js -->
 
 <script src="bootstrap.min.js"></script>
 <!-- endinject-->
 
 <script>
-    var _gaq = [
-        ['_setAccount', 'UA-XXXXX-X'],
-        ['_trackPageview']
-    ];
-    (function (d, t) {
-        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-        g.src = '//www.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g, s)
-    }(document, 'script'));
-
     $( document ).ready(function() {
   $( "#card_number" ).focus();
 });
