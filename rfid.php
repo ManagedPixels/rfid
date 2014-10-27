@@ -5,6 +5,7 @@
  * Based on EL.Sith MinimalSwipe.php
  * @author shawnsandy
  */
+
 ini_set('display_errors', '1');
 //ini_set('html_errors', 1);
 // set the default timezone to use. Available since PHP 5.1
@@ -22,7 +23,9 @@ class rfid {
 	$pdo,
 	$STDOUT;
 
-	public function __construct($kiosk_id = null) {
+	public function __construct() {
+
+		include_once 'config.php';
 
 		$this->STDOUT     = fopen('./log.txt', 'a');
 		$this->swipe_time = date("Y-m-d H:i:s");
@@ -32,7 +35,7 @@ class rfid {
 		}
 
 		try {
-			$this->pdo = new PDO('mysql:host=localhost;dbname=rfid', 'root', 'atlas1');
+			$this->pdo = new PDO('mysql:host=localhost;dbname=rfid', 'root', '');
 			$this->log("Connection to the database - ".$this->swipe_time);
 			//print_r($this->pdo->errorInfo());
 		} catch (Exception $ex) {
