@@ -66,9 +66,12 @@ endif;
 
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Atlas RF-Tracker.
+                                    <h1 class="panel-title"><i class="fa fa-arrow-circle-o-right"></i> Atlas RF-Tracker
 
-                                        <a href="http://" class="pull-right"><i class="fa fa-question-circle"></i> </a></h1>
+                                        <a href="http://" class="pull-right">
+                                        <!-- <i class="fa fa-question-circle"></i>  -->
+                                        </a>
+                                        </h1>
                                 </div>
                                 <div class="panel-body text-center">
                                     <div class="row">
@@ -84,8 +87,8 @@ endif;
                                             <!-- <img src="images/csf_reversed.png"> -->
 <?php //echo $this->Html->image('theme/adv_kiosks/csf_reversed.png');?>
 </a>
-                                        <h1>Welceom to the Florida Workforce Summit </h1>
-                                        <p>Please place your card on the RIFD reader (right).</p>
+                                        <h1>Welcome to the Florida Workforce Summit </h1>
+                                        <p>Please place your card on the RRID reader (right).</p>
 
                                     </div>
                                     <div class="well-off">
