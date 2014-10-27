@@ -85,7 +85,7 @@ endif;
 <?php //echo $this->Html->image('theme/adv_kiosks/csf_reversed.png');?>
 </a>
                                         <h1>Welceom to the Florida Workforce Summit </h1>
-                                        <p>Please place your card on the RIFD reader.</p>
+                                        <p>Please place your card on the RIFD reader (right).</p>
 
                                     </div>
                                     <div class="well-off">
@@ -94,7 +94,7 @@ endif;
 
                                                 <div class="form-group col-md-12">
                                                     <label for=""><p></p></label>
-                                                    <input type="password" class="form-control" id="card_number" name="card_number" placeholder="Please swipe you Conference ID card">
+                                                    <input type="password" class="form-control" id="card_number" name="card_number" placeholder="Please place your Conference ID on the card-reader (Right) ">
                                                 </div>
                                                 <div class="form-group col-sm-12">
                                                     <input type="hidden" name="kiosk_number" value="<?php echo $id->kiosk_number?>">
