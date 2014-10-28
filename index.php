@@ -137,7 +137,7 @@ endif;
     <footer>
         <nav class="navbar navbar-fixed-bottom">
 <?php if (isset($_POST['card_number'])):?>
-<div class="alert alert-success" data-dismiss="alert">Your have been registered for this seminar.
+<div class="alert alert-success" data-dismiss="alert">Welcomeattendee, you have been successfully registered for this seminar.
 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button></div>
 
 <?php endif;?>
