@@ -54,10 +54,10 @@ class rfid {
 		return $count;
 	}
 
-    public function get_name($card_num){
-        $attendeeName = $this->pdo->query("SELECT concat(first_name, ' ',last_name) FROM attendees where card_number = $card_num");
-        retrun $attendeeName;
-        }
+	public function get_name($card_num) {
+		$attendeeName = $this->pdo->query("SELECT concat(first_name, ' ',last_name) FROM attendees where card_number = $card_num");
+		retrun $attendeeName;
+	}
 
 	public function add_count($card_num) {
 
