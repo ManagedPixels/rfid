@@ -162,7 +162,7 @@ endif;
 <!-- /container -->
 <script src="jquery.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <!-- inject:js -->
 
 <script src="bootstrap.min.js"></script>
@@ -176,13 +176,17 @@ window.setTimeout(function() { $(".alert").alert('close'); }, 3000);
 
 <script>
 $(document).ready(function(){
-    //$( "#card_number" ).focus();
+
+
+
     $('#card_number').keyup(function () {
         ///$('#message').val( this.value.length );
         if (this.value.length == 8) {
             $('#badge').submit();
         }
     });
+
+    $( "#card_number" ).focus();
 });
 </script>
 </body>
