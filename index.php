@@ -95,10 +95,8 @@ endif;
                                         <div class="">
                                         <div class="alert-box">
 <?php if (isset($_POST['card_number'])):?>
-<div class="alert alert-success" data-dismiss="alert">Welcome, you have been successfully registered for this seminar.
-<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button></div>
-<?php  else :?>
-<div class="alert alert-info" data-dismiss="alert">Welcome, you have been successfully registered for this seminar.
+<div class="alert alert-success" data-dismiss="alert">
+Welcome <?php //echo $id->get_name($_POST['card_number']);?>, you have been successfully registered for this seminar.
 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button></div>
 <?php endif;?>
                                         </div>
