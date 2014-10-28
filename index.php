@@ -97,7 +97,7 @@ endif;
 
                                                 <div class="form-group col-md-12">
                                                     <label for=""><p></p></label>
-                                                    <input type="password" class="form-control" id="card_number" name="card_number" placeholder="Please place your Conference ID on the card-reader (Right) ">
+                                                    <input type="password" class="form-control" id="card_number" name="card_number" placeholder="Please place your Conference ID on the card-reader (Right) " autofocus>
                                                 </div>
                                                 <div class="form-group col-sm-12">
                                                     <input type="hidden" name="kiosk_number" value="<?php echo $id->kiosk_number?>">
@@ -160,19 +160,15 @@ endif;
     </footer>
 </div>
 <!-- /container -->
-<!-- <script src="jquery-1.11.1.min.js"></script> -->
+<script src="jquery.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- inject:js -->
 
 <script src="bootstrap.min.js"></script>
 <!-- endinject-->
 
 <script>
-    $( document ).ready(function() {
-  $( "#card_number" ).focus();
-});
-
 $(".alert").alert();
 window.setTimeout(function() { $(".alert").alert('close'); }, 3000);
 
@@ -180,6 +176,7 @@ window.setTimeout(function() { $(".alert").alert('close'); }, 3000);
 
 <script>
 $(document).ready(function(){
+    //$( "#card_number" ).focus();
     $('#card_number').keyup(function () {
         ///$('#message').val( this.value.length );
         if (this.value.length == 8) {
