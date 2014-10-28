@@ -93,7 +93,7 @@ endif;
                                     </div>
                                     <div class="well-off">
                                         <div class="">
-                                            <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+                                            <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post" id="badge">
 
                                                 <div class="form-group col-md-12">
                                                     <label for=""><p></p></label>
@@ -160,7 +160,9 @@ endif;
     </footer>
 </div>
 <!-- /container -->
-<script src="jquery.min.js"></script>
+<!-- <script src="jquery-1.11.1.min.js"></script> -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <!-- inject:js -->
 
 <script src="bootstrap.min.js"></script>
@@ -174,6 +176,17 @@ endif;
 $(".alert").alert();
 window.setTimeout(function() { $(".alert").alert('close'); }, 3000);
 
+</script>
+
+<script>
+$(document).ready(function(){
+    $('#card_number').keyup(function () {
+        ///$('#message').val( this.value.length );
+        if (this.value.length == 8) {
+            $('#badge').submit();
+        }
+    });
+});
 </script>
 </body>
 </html>
