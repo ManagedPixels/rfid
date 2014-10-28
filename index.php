@@ -169,7 +169,7 @@ Welcome <?php //echo $id->get_name($_POST['card_number']);?>, you have been succ
 <!-- /container -->
 <script src="jquery.min.js"></script>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 <!-- inject:js -->
 
 <script src="bootstrap.min.js"></script>

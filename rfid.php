@@ -35,7 +35,7 @@ class rfid {
 		}
 
 		try {
-			$this->pdo = new PDO('mysql:host=localhost;dbname=rfid', 'root', 'atals1');
+			$this->pdo = new PDO('mysql:host=localhost;dbname=rfid', 'root', 'atlas1');
 			$this->log("Connection to the database - ".$this->swipe_time);
 			//print_r($this->pdo->errorInfo());
 		} catch (Exception $ex) {
@@ -54,13 +54,13 @@ class rfid {
 		return $count;
 	}
 
-	public function get_name($card_num = null) {
-		if (!isset($card_num)) {
-			return;
-		}
-		$attendeeName = $this->pdo->query("SELECT concat(first_name, ' ',last_name) FROM attendees where card_number = $card_num");
-		return $attendeeName;
-	}
+	// public function get_name($card_num = null) {
+	// 	if (!isset($card_num)) {
+	// 		return;
+	// 	}
+	// 	$attendeeName = $this->pdo->query("SELECT concat(first_name, ' ',last_name) FROM attendees where card_number = $card_num");
+	// 	return $attendeeName;
+	// }
 
 	public function add_count($card_num) {
 
