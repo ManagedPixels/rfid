@@ -96,7 +96,7 @@ endif;
                                         <div class="alert-box">
 <?php if (isset($_POST['card_number'])):?>
 <div class="alert alert-success" data-dismiss="alert">
-Welcome <?php //echo $id->get_name($_POST['card_number']);?>, you have been successfully registered for this seminar.
+Thank you. You have been successfully registered for this workshop.
 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button></div>
 <?php endif;?>
                                         </div>
